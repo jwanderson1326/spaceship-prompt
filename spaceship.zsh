@@ -69,7 +69,6 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     terraform     # Terraform workspace section
     exec_time     # Execution time
     line_sep      # Line break
-    vpn          # ZSH
     battery       # Battery level and status
     vi_mode       # Vi-mode indicator
     jobs          # Background jobs indicator
@@ -122,6 +121,8 @@ for section in $(spaceship::union $SPACESHIP_PROMPT_ORDER $SPACESHIP_RPROMPT_ORD
     echo "Section '$section' have not been loaded."
   fi
 done
+
+source "$SPACESHIP_ROOT/sections/vpn.zsh"
 
 # ------------------------------------------------------------------------------
 # BACKWARD COMPATIBILITY WARNINGS
