@@ -69,7 +69,7 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     terraform     # Terraform workspace section
     exec_time     # Execution time
     line_sep      # Line break
-    vpn
+    vpn          # ZSH
     battery       # Battery level and status
     vi_mode       # Vi-mode indicator
     jobs          # Background jobs indicator
